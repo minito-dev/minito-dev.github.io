@@ -1243,11 +1243,34 @@
             transform: scale(1.1) translateY(-0.05rem);
         }
 
-        @media (max-width: 1920px) {}
+        .btn-mobile {
+            display: none;
+        }
+
+        .btn-desktop {
+            display: inline-block; 
+        }
+
+        @media (max-width: 1920px) {
+            .btn-mobile {
+                display: none !important;
+            }
+
+            .btn-desktop {
+                display: inline-block !important; 
+            }
+        }
 
         @media (max-width: 1680px) {
             html {
                 font-size: 15pt;
+            }
+            .btn-mobile {
+                display: none !important;
+            }
+
+            .btn-desktop {
+                display: inline-block !important; 
             }
         }
 
@@ -1255,19 +1278,51 @@
             html {
                 font-size: 15pt;
             }
+
+            .btn-mobile {
+                display: none !important;
+            }
+
+            .btn-desktop {
+                display: inline-block !important; 
+            }
         }
 
-        @media (max-width: 1024px) {}
+        @media (max-width: 1024px) {
+            .btn-mobile {
+                display: none !important;
+            }
+
+            .btn-desktop {
+                display: inline-block !important; 
+            }
+        }
 
         @media (max-width: 980px) {
             html {
                 font-size: 13pt;
+            }
+
+            .btn-mobile {
+                display: none !important;
+            }
+
+            .btn-desktop {
+                display: inline-block !important; 
             }
         }
 
         @media (max-width: 736px) {
             html {
                 font-size: 12pt;
+            }
+
+            .btn-mobile {
+                display: inline-block !important;
+            }
+
+            .btn-desktop {
+                display: none !important; 
             }
 
             .site-wrapper {
@@ -1653,6 +1708,14 @@
                 padding: 0rem 0rem 0 0;
             }
 
+            .btn-mobile {
+                display: inline-block !important;
+            }
+
+            .btn-desktop {
+                display: none !important; 
+            }
+
             .site-main>.inner {
                 --spacing: 2.5rem;
             }
@@ -1673,6 +1736,14 @@
         @media (max-width: 360px) {
             .site-wrapper {
                 padding: 0rem 0rem 0 0;
+            }
+
+            .btn-mobile {
+                display: inline-block !important;
+            }
+
+            .btn-desktop {
+                display: none !important; 
             }
 
             .site-main>.inner {
@@ -1804,9 +1875,6 @@
                                         </span>
                                     </a>
                                 </li>
-                                <li class="n01">
-                                    <p id="text08" class="text-component instance-8">Discord: minito</p>
-                                </li>
                             </ul>
                             <ul id="icons02" class="icons-component instance-1">
                                 <li><a class="n01" href="https://bsky.app/profile/minito.dev" role="button"><svg
@@ -1814,7 +1882,18 @@
                                             <title id="icons01-icon-1-title">Bluesky</title>
                                             <use xlink:href="#icon-1b9d22f28a94f964a5d0b2d02198576b"></use>
                                         </svg><span class="label">Bluesky</span></a></li>
+                                <li><a class="n01 btn-mobile" href="https://discord.com/users/125283948665372672" role="button"><svg
+                                            aria-labelledby="icons01-icon-1-title">
+                                            <title id="icons01-icon-1-title">Discord</title>
+                                            <use xlink:href="#icon-3b7eeeccbb457780f277fce4669f67a0"></use>
+                                        </svg><span class="label">Discord</span></a></li>
+                                <li><a class="n01 btn-desktop" href="discord://-/users/125283948665372672" role="button"><svg
+                                            aria-labelledby="icons01-icon-1-title">
+                                            <title id="icons01-icon-1-title">Discord</title>
+                                            <use xlink:href="#icon-3b7eeeccbb457780f277fce4669f67a0"></use>
+                                        </svg><span class="label">Discord</span></a></li>
                             </ul>
+                            
                         </div>
                     </div>
                 </div>
