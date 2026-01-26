@@ -1249,7 +1249,32 @@
         }
 
         .btn-desktop {
-            display: inline-block; 
+            display: inline-block;
+        }
+
+        .button-component {
+            display: inline-block;
+        }
+
+        .button-component a {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #FF9900;
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.875em;
+            font-weight: 700;
+            letter-spacing: -0.025rem;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            transition: background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .button-component a:hover {
+            background-color: #FFE91F;
+            color: #000000;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 153, 0, 0.4);
         }
 
         @media (max-width: 1920px) {
@@ -1840,17 +1865,6 @@
                         </div>
                     </div>
                 </div>
-                <div id="container02" class="container-component instance-3 default">
-                    <div class="wrapper">
-                        <div class="inner">
-                            <p id="text02" class="text-component instance-3">WIP</p>
-                            <hr id="divider03" class="divider-component instance-2">
-                            <p id="text06" class="text-component instance-8">This site is a work in progress. Nothing
-                                is bound to stay the same.
-                            </p>
-                        </div>
-                    </div>
-                </div>
                 <div id="container03" class="container-component instance-3 default">
                     <div class="wrapper">
                         <div class="inner">
@@ -1859,6 +1873,18 @@
                             <p id="text08" class="text-component instance-8">I&#39;m a software developer and I try to
                                 make some cool things in my spare time. I also enjoy art, shows, video games, movies,
                                 pretty much all story-telling mediums.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="container05" class="container-component instance-3 default">
+                    <div class="wrapper">
+                        <div class="inner">
+                            <p id="text09" class="text-component instance-3">Art Wall</p>
+                            <hr id="divider04" class="divider-component instance-2">
+                            <p id="text10" class="text-component instance-8">An art wall for my character, composed of commissions.</p>
+                            <div class="button-component">
+                                <a href="https://artwall.minito.dev">Visit the Art Wall</a>
+                            </div>
                         </div>
                     </div>
                 </div>
